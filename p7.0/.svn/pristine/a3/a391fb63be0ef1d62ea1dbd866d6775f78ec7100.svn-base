@@ -1,0 +1,49 @@
+﻿<template>
+    <div>
+      <subpagetitle pagetitle="员工信息"></subpagetitle>
+      <!--<div class="wyi"><search></search></div>-->
+      <div class="wei1" @click="showd=!showd"><ygtable></ygtable></div>
+    </div>
+</template>
+
+<script>
+  import subpagetitle from './common/subpagetitle.vue'
+  import search from './common/search.vue'
+  import ygtable from './common/ygtable.vue'
+
+    export default {
+      name: "staff",
+      components:{
+        subpagetitle:subpagetitle,
+        search:search,
+        ygtable:ygtable,
+      },
+      data(){
+        return{
+          tableData3: [],
+//          showd:false,
+        }
+      },
+//     created () {
+//      let that=this;
+//      /*发起请求，请求数据，向node发起请求*/
+//      this.$axios.get("http://172.16.6.57:8888/staff.do")
+//        .then(function (resp) {
+//            that.tableData3=resp.data;
+//    })
+//  },
+    }
+</script>
+
+<style scoped>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .wyi{
+    margin-top: -85px;
+  }
+  .wei1{
+    margin-top: 80px;
+  }
+</style>

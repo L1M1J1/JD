@@ -1,0 +1,34 @@
+<template>
+    <div id="content">
+      <myDataUl></myDataUl>
+      <mySyTj></mySyTj>
+      <myXlTj></myXlTj>
+      <myKcTj></myKcTj>
+      <myScTj></myScTj>
+      <myGwTj></myGwTj>
+    </div>
+</template>
+
+<script>
+  import myDataUl from'./sjtj/dataul';
+  import mySyTj from './sjtj/sytj';
+  import myXlTj from './sjtj/xltj';
+  import myKcTj from './sjtj/kctj';
+  import myScTj from './sjtj/sctj';
+  import myGwTj from './sjtj/gwtj';
+    export default {
+        name: "sjtj",
+      components:{
+        myDataUl:myDataUl,
+        mySyTj:mySyTj,
+        myXlTj:myXlTj,
+        myKcTj:myKcTj,
+        myScTj:myScTj,
+        myGwTj:myGwTj,
+      }
+    }
+</script>
+
+<style scoped>
+
+</style>
